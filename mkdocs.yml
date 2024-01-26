@@ -2,7 +2,7 @@
 site_name: Medicare Documentation
 site_description: 'Aggregated Medicare documentation in a single place'
 site_author: 'Kyle Barron'
-site_url: 'https://kylebarron.github.io/medicare-documentation/'
+site_url: 'https://DiscWeb.github.io/disc_web/'
 
 docs_dir: 'docs'
 site_dir: 'site'
