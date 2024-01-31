@@ -1,67 +1,21 @@
-# Project Information
-site_name: Medicare Documentation
+site_name: Medicare CMS Documentation
 site_description: 'Aggregated Medicare documentation in a single place'
-site_author: 'Kyle Barron'
-site_url: 'https://DiscWeb.github.io/disc_web/'
+site_author: 'DiscWeb'
+site_url: 'https://discweb.github.io/disc_web/'
 
 docs_dir: 'docs'
 site_dir: 'site'
 
-# Repository
-repo_name: 'medicare-documentation'
-repo_url: 'https://github.com/kylebarron/medicare-documentation'
+repo_name: 'disc_web'
+repo_url: 'https://github.com/DiscWeb/disc_web.git'
 #edit_uri: 'blob/master/docs/'
-
-# Important for correct viewing offline
-use_directory_urls: false
-
-# Layout
 nav:
     - Home: 'index.md'
-    - NBER Documentation:
-        - Overview: 'NBER_website/1_Overview.md'
-        - Description of Claims Files: 'NBER_website/2_Background.md'
-        - Getting Started with SAS: 'NBER_website/3_Getting_started_with_SAS.md'
-        - Constructing Extracts with SAS: 'NBER_website/4_constructing_extracts.md'
-        - Manipulating Extracts with SAS: 'NBER_website/5_manipulating_medicare_extracts.md'
-        - Generating Costs Measures: 'NBER_website/6_costs.md'
-        - References: 'NBER_website/7_references.md'
-        - Appendix: 'NBER_website/8_appendix_a.md'
-        - Version Updates: 'NBER_website/9_version_updates.md'
-    - ResDAC Documentation:
-        - Beneficiary Summary File: 'resdac/mbsf.md'
-        - Carrier RIF: 'resdac/carrier-rif.md'
-        - Denominator RIF: 'resdac/denominator-rif.md'
-        - Durable Medical Equipment RIF: 'resdac/dme-rif.md'
-        - Home Health Agency RIF: 'resdac/hha-rif.md'
-        - Hospice RIF: 'resdac/hospice-rif.md'
-        - Inpatient RIF: 'resdac/ip-rif.md'
-        - MedPAR RIF: 'resdac/medpar-rif.md'
-        - Outpatient RIF: 'resdac/op-rif.md'
-        - Skilled Nursing Facility RIF: 'resdac/snf-rif.md'
-        - Variable Definitions:
-            - All Files: 'resdac/variables/variables.md'
-            - Beneficiary Summary File: 'resdac/variables/mbsf.md'
-            - Carrier RIF: 'resdac/variables/carrier-rif.md'
-            - Durable Medical Equipment RIF: 'resdac/variables/dme-rif.md'
-            - Home Health Agency RIF: 'resdac/variables/hha-rif.md'
-            - Hospice RIF: 'resdac/variables/hospice-rif.md'
-            - Inpatient RIF: 'resdac/variables/ip-rif.md'
-            - MedPAR RIF: 'resdac/variables/medpar-rif.md'
-            - Outpatient RIF: 'resdac/variables/op-rif.md'
-            - Skilled Nursing Facility RIF: 'resdac/variables/snf-rif.md'
-    - Working with the Data:
-        - Goals for New Data Format: 'kyle/goals-for-modern-data-format.md'
-        - Standard Readme: 'kyle/01medicare_readme.md'
-        - Data Extraction Overview: 'kyle/extract_data.md'
-        - Data Locations: 'kyle/data_locations.md'
-        - Using tmux for long-running jobs: 'kyle/using-tmux-aging-servers.md'
-    - Important Details:
-        - Enrollment Restrictions: 'mauricio/enrollment-restrictions.md'
-        - Calculating Costs for Inpatient Visits: 'mauricio/lag-post-event-spending.md'
-    - Glossary: 'glossary.md'
+    - A:
+        - Overview: 'A/overview.md'
+    - B:
+        - Title B: 'B/b.md'
 
-# Theme
 theme:
     feature:
         tabs: true
@@ -70,42 +24,8 @@ theme:
     name: 'material'
     language: 'en'
     palette:
-        primary: 'orange'
+        primary: 'blue'
         accent:  'light blue'
     font:
         text: 'Nunito Sans'
-        # code: 'Roboto Mono'
         code: 'Fira Code'
-
-extra_javascript:
-    - js/helpers.js
-    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-
-# These extensions are chosen to be a superset of Pandoc's Markdown.
-# This way, I can write in Pandoc's Markdown and have it be supported here.
-# https://pandoc.org/MANUAL.html
-markdown_extensions:
-    - admonition
-    - attr_list
-    - codehilite:
-        guess_lang: false
-    - def_list
-    - footnotes
-    - pymdownx.arithmatex
-    - pymdownx.betterem
-    - pymdownx.caret:
-        insert: false
-    - pymdownx.details
-    - pymdownx.emoji
-    - pymdownx.escapeall:
-        hardbreak: true
-        nbsp: true
-    - pymdownx.magiclink:
-        hide_protocol: true
-        repo_url_shortener: true
-    - pymdownx.smartsymbols
-    - pymdownx.superfences
-    - pymdownx.tasklist(custom_checkbox=true)
-    - pymdownx.tilde
-    - toc:
-        permalink: true
