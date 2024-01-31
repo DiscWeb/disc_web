@@ -29,3 +29,33 @@ theme:
     font:
         text: 'Nunito Sans'
         code: 'Fira Code'
+
+extra_javascript:
+    - js/helpers.js
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - codehilite:
+        guess_lang: false
+    - def_list
+    - footnotes
+    - pymdownx.arithmatex
+    - pymdownx.betterem
+    - pymdownx.caret:
+        insert: false
+    - pymdownx.details
+    - pymdownx.emoji
+    - pymdownx.escapeall:
+        hardbreak: true
+        nbsp: true
+    - pymdownx.magiclink:
+        hide_protocol: true
+        repo_url_shortener: true
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist(custom_checkbox=true)
+    - pymdownx.tilde
+    - toc:
+        permalink: true
