@@ -1,3 +1,0 @@
-# Carrier RIF
-
-??? note "Source"
