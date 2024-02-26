@@ -4,18 +4,24 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-.header { 
-    background-color: #FFA500; 
-    padding: 40px; 
-    text-align: left;
+.header {
+    display: grid;
+    grid-template-rows: auto auto; /* Creates two rows: one for the title and one for the nav */
+    padding: 20px;
+    background-color: orange;
 }
+
 .header h1 {
-    font-size: 20px;
-    margin: 0;
-    display: block;
+    grid-row: 1;
+    justify-self: start; /* Positions the title to the left */
+    margin-left: 15px;
 }
+
 nav {
-    display: block;
+    grid-row: 2; /* Positions the nav in the second row */
+    justify-self: stretch; /* Stretches nav to take full width of the grid container */
+    display: flex; /* Optional: if you want nav items to use flexbox layout */
+    flex-wrap: wrap; /* Allows nav items to wrap if needed */
 }
 nav a {
     color: white;
