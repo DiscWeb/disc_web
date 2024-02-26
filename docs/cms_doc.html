@@ -4,92 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medicare Documentation</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .header { 
-            background-color: #FFA500; 
-            padding: 20px; 
-            text-align: left; 
-        }
-        .header h1 {
-            font-size: 20px;
-            margin: 0;
-            display: block; /* Make the title display in its own line */
-        }
-        nav {
-            display: block; /* Aligns navigation links below the title */
-        }
-        nav a {
-            color: white;
-            padding: 8px 16px;
-            font-size: 16px;
-            text-decoration: none;
-            display: inline-block; /* Aligns links horizontally */
-        }
-        .dropdown {
-            display: inline-block; /* Keeps dropdown inline */
-        }
-        .dropbtn {
-            background-color: #FFA500;
-            color: white;
-            padding: 8px 16px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            text-decoration: none; /* Removes underline */
-        }
-        .dropdown-content {
-            display: none; /* Hidden until hovered */
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            display: block; /* Dropdown links are vertically listed */
-        }
-        .dropdown-content a:hover {background-color: #f1f1f1;}
-        .dropdown:hover .dropdown-content {
-            display: block; /* Show dropdown content on hover */
-        }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .sidebar {
-            background-color: #f2f2f2;
-            width: 200px;
-            padding: 20px;
-        }
-        .sidebar a {
-            text-decoration: none;
-            color: #333;
-            display: block;
-            padding: 10px 0;
-        }
-        .main-content {
-            flex-grow: 1;
-            padding: 20px;
-        }
-        .footer { 
-            background-color: #333; 
-            color: #fff; 
-            text-align: center; 
-            padding: 10px; 
-            position: absolute; 
-            bottom: 0; 
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="medicare.css">
+
 <nav>
     <a href="index.html">Home</a>
     <a href="cms_doc.html" class="active">CMS/CCW Documentation</a>
@@ -101,8 +17,8 @@
 <div class="header">
     <h1>Medicare Documentation</h1>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">CMS/CCW Documentation</a>
+        <a href="index.html">Home</a>
+        <a href="cms_doc.html">CMS/CCW Documentation</a>
         <a href="#">Requesting data access</a>
         <a href="#">DUA Amendments&Renewals</a>
         <div class="dropdown">
