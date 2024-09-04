@@ -98,27 +98,48 @@
         <h2>Useful Data/Documentation Links</h2>
         <ul>
             <li><a href="data_links.html#documentation"> Documentation by Filetype </a></li>
-            <li><a href="data_links.html#resdac_documents">Public RESDAC </a></li>
+            <li><a href="data_links.html#resdac_documents">Public RESDAC Documentation </a></li>
         </ul>
     </div>
 
     <div class="main-content">
-        <!-- Main content with the subheadings for "Using the VRDC" -->
-        <h2 id="vdrdc-setup">VRDC Set-up</h2>
-        <p>Insert text here.</p>
+      <!-- Main content with the subheadings for "Using the VRDC" -->
+      <h2 id="vdrdc-setup">VRDC Set-up</h2>
+      <p>Insert text here.</p>
 
-        <h2 id="sas-eg">Working with the Data (SAS EG)</h2>
-        <p>Insert text here.</p>
+      <h2 id="sas-eg">Working with the Data (SAS EG)</h2>
+      <p>
+          Log into SAS Enterprise using your username in <strong>LOWERCASE</strong>. In <em>Servers/sasCCW/Libraries</em>, all the data files are displayed.
+          We can only access the data files that we requested (almost all files) but can see all of them.
+          Loading individual files is pretty quick, but you often have to merge 12 month files to get an entire year, which takes some time.<br><br>
+          If you ever get logged out or can’t log in in SAS EG, just click “no profile selected” in the bottom right corner and click <em>Cloud SAS</em>. The login screen will pop up again and you can log in.<br><br>
+          You can save files in SAS using the folder <code>SHxxxxxx</code> (replace xxxxxx with your DUA number) which can be found under libraries.
+          Otherwise, created files are stored in the WORK directory which uses shared space across all users instead of individual storage.
+          This means data here won't count to storage limits, but your instance and files will be deleted if you use too much of the shared space (more than 5TB).
 
-        <h2 id="analytic-container">Analytic Container (R/Python/Stata)</h2>
-        <p>Insert text here.</p>
+      </p>
 
-        <h2 id="saving-files">Saving files in the VRDC/file transfers</h2>
-        <p>Insert text here.</p>
+      <h2 id="analytic-container">Analytic Container (R/Python/Stata)</h2>
+      <p>
+          All three are opened through the Jupyter icon.
+          For R and Python, you can just open a kernel or notebook. For Stata, you need to be on the equivalent of the home screen to open a Stata instance.
+          You can’t read giant datasets into R/Python/STATA (currently 24GB memory limit). Consider splitting them up by month and reading separately (also get rid of any columns you don’t need before exporting from SAS).
+      </p>
 
-        <h2 id="additional-considerations">VRDC additional considerations</h2>
-        <p>Insert text here.</p>
-    </div>
+      <h2 id="saving-files">Saving files in the VRDC/file transfers</h2>
+      <p>
+          You can’t copy code out of the VRDC. So, you should keep code in the shared VRDC folder3 that everyone in your DUA can access. If you want to send it outside, or especially to keep a backup, you need to type it outside of the VRDC and then copy it inside.<br>
+          We find the easiest and most efficient method is to type everything locally (in any word processor), and then copy all of the script as text. Stata in the VRDC can’t be copied into directly, but you can open Notepad++ (inside the VRDC) and copy into that, and then copy into Stata as a 2-step process.
+      </p>
+
+      <h2 id="additional-considerations">VRDC additional considerations</h2>
+      <p>
+          Our scripts/data are saved under server <code>“sasCCW/Files/dua_xxxxxx”</code>, which is a shared drive we can all access that has lots of subfolders.
+           This can’t be accessed through Windows file editor, but you can save from SAS or any of the other programming languages, which have that as their home directory.<br><br>
+          Everyone also has their own unique filepath to access data on the shared drive.
+          This means that the line below points to a specific filepath on one account, <code>/sas/vrdc/users/zzzzzz/files/dua_xxxxxx</code>, where zzzzzz is the individual username and xxxxxx is the DUA number.
+      </p>
+  </div>
 </div>
 
 </body>
