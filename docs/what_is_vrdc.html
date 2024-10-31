@@ -48,7 +48,7 @@
 <body>
 
 <div class="header">
-    <h1>Medicare Documentation - What is the VRDC?</h1>
+    <h1>Medicare and Medicaid Claims Documentation - What is the VRDC?</h1>
 </div>
 
 <!-- Add the return button -->
@@ -63,7 +63,7 @@
         <ul>
             <li><a href="what_is_vrdc.html">What is the VRDC?</a></li>
             <ul>
-                <li><a href="what_is_vrdc.html#how-to-use">How do you use it?</a></li>
+                <li><a href="what_is_vrdc.html#how-to-use">How do you access it?</a></li>
                 <li><a href="what_is_vrdc.html#requirements">What are the requirements to use?</a></li>
                 <li><a href="what_is_vrdc.html#resources">Resources</a></li>
             </ul>
@@ -108,19 +108,61 @@
     </div>
 
     <div class="main-content">
+
+      <section class="quick-look">
+      <h2>Visual VRDC Overview</h2>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQuYnTpDItUHcBcV10nUKrT2oRcZZ-yCp4ZuzGM2oyKB7vLbAy5SXhSlWlXFGYalcJaNGGbNCjQkq6w/embed?start=false&loop=false&delayms=60000" frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </section>
+
         <!-- Main content with the subheadings for "What is the VRDC?" -->
         <h2 id="what-is-vrdc">What is the VRDC?</h2>
-        <p>Insert text here.</p>
+        <ul>
+            <li>The Virtual Research Data Center (VRDC) is an analytic environment that enables researchers to access and analyze CMS program data stored in the Chronic Conditions Warehouse (CCW).</li>
+            <li>CMS Chronic Conditions Data Warehouse (CCW) provides researchers with Medicare and Medicaid beneficiary, claims, and assessment data linked by beneficiary across the continuum of care.</li>
+            <li>Researchers connect remotely to the VRDC from their own workstations to perform data analyses.</li>
+            <li>Benefits of using VRDC include:</li>
+            <ul> <li> Secure environment to analyze beneficiary level data.  </li>
+              <li> No Data management plan required.  </li>
+              <li> Dedicated workspace only accessible to the study team. </li>
+            </ul>
+        </ul>
 
-        <h2 id="how-to-use">How do you use it?</h2>
-        <p>Insert text here.</p>
+        <h2 id="how-to-use">How do you access it?</h2>
+        <ul>
+            <li> Access to the CCW VRDC is granted to researchers with an approved Data Use Agreement (DUA) from CMS.</li>
+            <ul> <li> Under the approved DUA, individual users are given access with a 'seat', which can only be allocated to 1 individual, and each 'seat' has an associated fee. </li> </ul>
+            <li> VRDC access requires obtaining a CCW user ID, which typically takes three to four business days, depending on user completion of specific tasks including: </li>
+            <ul> <li> Completing identity proofing through Experian </li>
+              <li> Annual Security Awareness Training (SAT)  </li>
+              <li> Setting up multi-factor authentication (MFA) </li>
+              <li> Downloading VMware Horizon Client </li>
+              <li> Connecting to the VRDC virtual desktop </li>
+            </ul>
+            <li> Once connected, users log in to SAS® Enterprise Guide®; library access is usually granted within two to three business days after CMS confirms the approved DUA and payment. </li>
+            <li> For information on requesting access, visit the "About the VRDC and Requesting Access" section on the CMS website or explore the Research Data Assistance Center (ResDAC) website at www.resdac.org. </li>
+        </ul>
 
         <h2 id="requirements">What are the requirements to use?</h2>
-        <p>Insert text here.</p>
-
+        <ul>
+            <li>Must be physically present in the U.S. or U.S. territories and connect from a registered U.S. IP address. (Do not attempt to access VRDC outside of the U.S.) </li>
+            <li> Meet CCW security requirements, including annual security training and HIPAA compliance.</li>
+            <li> Comply with CCW data output review process to protect the confidentiality of Medicare and Medicaid beneficiaries and adhere to CMS-approved access guidelines.</li>
+            <li> Do not disclose confidential information such as Protected Health Information (PHI), Personally Identifiable Information (PII), and small cell sizes (<11). </li>
+             <li> The CCW VRDC supports Windows but does not support Mac. </li>
+              <li> Systems must be updated to meet CMS standards and install the latest Virtual Desktop Infrastructure (VDI) client. </li>
+            <ul> <li> Multi-factor authentication (MFA) is required via Okta enrollment. </li>
+              <li> <a href="https://www2.ccwdata.org/documents/10280/19001850/CCW-Okta-Factor-Enrollment-and-Management-Guide.pdf"> Click here</a> to access CCW Okta Factor Enrollment and Management Guide. </li>
+            </ul>
+        </ul>
+        Our other recommendations are to use the latest version of Google Chrome, Mozilla Firefox, or Microsoft Edge and to review
+        the <a href="https://www2.ccwdata.org/documents/10280/19002246/ccw-vrdc-data-output-review-info.pdf"> CCW Secure File Transfer System (SFTS) User Guide. </a>
         <h2 id="resources">Resources</h2>
-        <p>Insert text here.</p>
-    </div>
+        <ul>
+              <li> <a href = "https://www2.ccwdata.org/web/guest/technical-guidance-documentation"> Publicly available trainings and technical documents </a> </li>
+              <li> <a href = "https://federate.ccwdata.org/public/share/main/signin.html?fromURI=https%3A%2F%2Fcms.okta.com%2Fapp%2Fcms_ccwfederate_1%2Fexk1ms82qtdKTiRFI297%2Fsso%2Fsaml"> Trainings</a> after your team receives access to the VRDC </li>
+              <li> <a href = "https://www2.ccwdata.org/web/guest/faq"> FAQ for Analytics </a> </li>
+        </ul>
+      </div>
 </div>
 
 </body>

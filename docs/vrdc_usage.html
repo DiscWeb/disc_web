@@ -43,7 +43,7 @@
 <body>
 
 <div class="header">
-    <h1>Medicare Documentation - Using the VRDC</h1>
+    <h1>Medicare and Medicaid Claims Documentation - Using the VRDC</h1>
 </div>
 
 <!-- Add the return button -->
@@ -58,7 +58,7 @@
         <ul>
             <li><a href="what_is_vrdc.html">What is the VRDC?</a></li>
             <ul>
-                <li><a href="what_is_vrdc.html#how-to-use">How do you use it?</a></li>
+                <li><a href="what_is_vrdc.html#how-to-use">How do you access it?</a></li>
                 <li><a href="what_is_vrdc.html#requirements">What are the requirements to use?</a></li>
                 <li><a href="what_is_vrdc.html#resources">Resources</a></li>
             </ul>
@@ -105,7 +105,8 @@
     <div class="main-content">
       <!-- Main content with the subheadings for "Using the VRDC" -->
       <h2 id="vdrdc-setup">VRDC Set-up</h2>
-      <p>Insert text here.</p>
+      Logging onto VMware Horizon Client requires using the same <strong>LOWERCASE</strong> username and passcode, and then there is an Okta 2-factor authentication step.
+      From there, you can log onto the virtual Windows desktop and click to different applications. The File Transfer Request System (FTRS) is available from the desktop as well as the Analytic Container and Databricks.
 
       <h2 id="sas-eg">Working with the Data (SAS EG)</h2>
       <p>
@@ -121,7 +122,7 @@
 
       <h2 id="analytic-container">Analytic Container (R/Python/Stata)</h2>
       <p>
-          All three are opened through the Jupyter icon.
+          All three are opened through the Jupyter icon on the desktop.
           For R and Python, you can just open a kernel or notebook. For Stata, you need to be on the equivalent of the home screen to open a Stata instance.
           You can’t read giant datasets into R/Python/STATA (currently 24GB memory limit). Consider splitting them up by month and reading separately (also get rid of any columns you don’t need before exporting from SAS).
       </p>
