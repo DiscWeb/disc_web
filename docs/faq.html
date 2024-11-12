@@ -104,11 +104,49 @@
 
     <div class="main-content">
         <!-- Main content with the subheadings for "Frequently Asked Questions" -->
-        <h2 id="data-queries">Data Queries</h2>
-        <p>Insert text here.</p>
+        <h2 id="data-queries">Common Questions</h2>
+        <p>
+        <ul>
+        <li>After completing the analysis in the VRDC, how do you export the data?</li>
+            <ul> 
+            <li> CCW provides a file transfer system that allows a certain number of export request per seven days on a rolling basis.
+                 The number of exports depends on the status of DUA. Researchers and Innovators are allowed to export three and six times
+                 per week, respectively The total size of files cannot exceed 1 gigabyte per each export. Before exporting any output cells 
+                 containing less than 11 observations and any personal identifiers must be redacted. CCW provides a detailed guide about 
+                 the requirements and the process of downloading output. </li>
+            </ul>
+         <li>What types of data outputs does the VRDC provide?</li>
+            <ul> 
+            <li> </li>
+            </ul>       
+         <li>Is there specific analytic software or skills you must have to analyze data in the VRDC?</li>
+            <ul> 
+            <li> VRDC provides different analytical software. The only software to initially access CMS data is SAS. After accessing
+                 the data with SAS you save the data and then use Python, R, or Stata to perform empirical analysis. To use Python, R, 
+                 or Stata you need either an analytic container or data bricks. Our workflow is first to create the analysis data set 
+                 in SAS and then use Python, R, or Stata depending on the team member. </li>
+            </ul>           
+          <li>Are there rules and/or guidelines investigators must follow to access the VRDC?</li>
+            <ul> 
+            <li> Investigators must follow strict rules when accessing the data through VRDC. Researcher must be physically present in the 
+                 U.S. or U.S. territories, meet CCW security requirements (annual security training and HIPAA compliance), and comply with 
+                 CCW data output review process. </li>
+            </ul>         
+        </ul>   
+        </p>
 
         <h2 id="troubleshooting">Tips for troubleshooting (Problems you may encounter)</h2>
-        <p>Insert text here.</p>
+        <p>Here are some common errors we encountered:
+        <ul>
+            <li>Unable to insert into temporary index while processing summary functions</li>
+            <ul> 
+            <li> This error appears in SAS EG when you perform an operation that requires too much memory.
+                 We encountered this error by collapsing a big file (~500 million rows) using proc sql. 
+                 As an alternative you can use proc sort nodupkey to collapse big data sets.                 
+            </li>
+            </ul>
+        </ul>   
+        </p>
     </div>
 </div>
 
