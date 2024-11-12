@@ -149,8 +149,10 @@
             <li><b>Unable to insert into temporary index while processing summary functions</b></li>
             <ul>
             <li> This error appears in SAS EG when you perform an operation that requires too much memory.
-                 We encountered this error by collapsing a big file (~500 million rows) using proc sql.
-                 As an alternative you can use proc sort nodupkey to collapse big data sets.
+                 We encountered this error when we wanted to count the number of unique beneficiaries by 
+                 some groups (e.g., age, race, sex, state) in a big file (~500 million rows) using proc sql.
+                 As an alternative you can first use proc sort nodupkey on the unique identifier and group  
+                 variable and then proc freq on the group variable to obtain the count.
             </li>
                         </ul>
             <li><b>Unable to see any SAS claims files on the VRDC</b></li>
