@@ -107,45 +107,56 @@
         <h2 id="data-queries">Common Questions</h2>
         <p>
         <ul>
-        <li>After completing the analysis in the VRDC, how do you export the data?</li>
-            <ul> 
+        <li> <b> After completing the analysis in the VRDC, how do you export the data?</b> </li>
+            <ul>
             <li> CCW provides a file transfer system that allows a certain number of export request per seven days on a rolling basis.
                  The number of exports depends on the status of DUA. Researchers and Innovators are allowed to export three and six times
-                 per week, respectively The total size of files cannot exceed 1 gigabyte per each export. Before exporting any output cells 
-                 containing less than 11 observations and any personal identifiers must be redacted. CCW provides a detailed guide about 
+                 per week, respectively The total size of files cannot exceed 1 gigabyte per each export. Before exporting any output cells
+                 containing less than 11 observations and any personal identifiers must be redacted. CCW provides a detailed guide about
                  the requirements and the process of downloading output. </li>
             </ul>
-         <li>What types of data outputs does the VRDC provide?</li>
-            <ul> 
+         <li><b>What types of data outputs does the VRDC provide?</b></li>
+            <ul>
             <li> </li>
-            </ul>       
-         <li>Is there specific analytic software or skills you must have to analyze data in the VRDC?</li>
-            <ul> 
+            </ul>
+         <li><b>Is there specific analytic software or skills you must have to analyze data in the VRDC?</b></li>
+            <ul>
             <li> VRDC provides different analytical software. The only software to initially access CMS data is SAS. After accessing
-                 the data with SAS you save the data and then use Python, R, or Stata to perform empirical analysis. To use Python, R, 
-                 or Stata you need either an analytic container or data bricks. Our workflow is first to create the analysis data set 
+                 the data with SAS you save the data and then use Python, R, or Stata to perform empirical analysis. To use Python, R,
+                 or Stata you need either an analytic container or data bricks. Our workflow is first to create the analysis data set
                  in SAS and then use Python, R, or Stata depending on the team member. </li>
-            </ul>           
-          <li>Are there rules and/or guidelines investigators must follow to access the VRDC?</li>
-            <ul> 
-            <li> Investigators must follow strict rules when accessing the data through VRDC. Researcher must be physically present in the 
-                 U.S. or U.S. territories, meet CCW security requirements (annual security training and HIPAA compliance), and comply with 
+            </ul>
+          <li><b>Are there rules and/or guidelines investigators must follow to access the VRDC?</b></li>
+            <ul>
+            <li> Investigators must follow strict rules when accessing the data through VRDC. Researcher must be physically present in the
+                 U.S. or U.S. territories, meet CCW security requirements (annual security training and HIPAA compliance), and comply with
                  CCW data output review process. </li>
-            </ul>         
-        </ul>   
+            </ul>
+            <li><b>Are there any files missing on the VRDC?</b></li>
+              <ul>
+              <li> Yes, we noticed that in the MAX data there are specific state-year data files that do not exist from 2009 to 2011. Specifically, the following files:
+                MAX2009.MAXDATA_ME_OT, MAX2010.MAXDATA_KS_OT, MAX2010.MAXDATA_KS_RX, MAX2010.MAXDATA_ME_OT, MAX2010.MAXDATA_ME_RX, and MAX2011.MAXDATA_ID_OT are missing.
+  </li>
+              </ul>
+        </ul>
         </p>
 
         <h2 id="troubleshooting">Tips for troubleshooting (Problems you may encounter)</h2>
         <p>Here are some common errors we encountered:
         <ul>
-            <li>Unable to insert into temporary index while processing summary functions</li>
-            <ul> 
+            <li><b>Unable to insert into temporary index while processing summary functions</b></li>
+            <ul>
             <li> This error appears in SAS EG when you perform an operation that requires too much memory.
-                 We encountered this error by collapsing a big file (~500 million rows) using proc sql. 
-                 As an alternative you can use proc sort nodupkey to collapse big data sets.                 
+                 We encountered this error by collapsing a big file (~500 million rows) using proc sql.
+                 As an alternative you can use proc sort nodupkey to collapse big data sets.
+            </li>
+                        </ul>
+            <li><b>Unable to see any SAS claims files on the VRDC</b></li>
+            <ul>
+            <li> This happens when there is a SAS error or other issue that causes you to be logged out of the SAS instance or your Cloud SAS profile. If that happens, click the bottom right 'No profile selected' button (it replaces 'Cloud SAS') and type in your credentials again under the profiles.
             </li>
             </ul>
-        </ul>   
+        </ul>
         </p>
     </div>
 </div>

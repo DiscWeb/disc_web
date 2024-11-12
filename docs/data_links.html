@@ -105,10 +105,54 @@
     <div class="main-content">
         <!-- Main content with the subheadings for "Useful Data/Documentation Links" -->
         <h2 id="documentation">Documentation by Filetype</h2>
-        <p>Insert text here.</p>
+        <p>The Chronic Conditions Warehouse (CCW) keeps a list of <a href="https://www2.ccwdata.org/web/guest/data-dictionaries"> codebooks for Medicare and Medicaid data</a> as well as record layouts for other less common files.
+          It also publishes documentation for other files it creates, specifically the chronic conditions flags for Medicare, and some other data products.
+          <br><br>
+          <strong>Primary (27 or 30) Chronic Conditions: </strong>
+          <a href="https://www2.ccwdata.org/web/guest/condition-categories-chronic"> This Chronic Conditions link </a> contains the most recent chronic conditions algorithms.
+          Notably, these codes are updated yearly based on an expert panel, but flags from prior years are not rerun on the latest algorithms -- CCW usually recalculates flags for the two years prior to the year of the algorithm change.
+          <br><br>
+          <strong> Other (40) Chronic Health, Mental Health, and Potentially Disabling Conditions: </strong>
+          <a href="https://www2.ccwdata.org/web/guest/condition-categories-other"> These "Other" conditions </a> contain codes for mental health disorders, substance use, and other conditions. This conditions file was created in 2017 and has had updates in the years since. For a flag like OUD#4 (MOUD), the coding of naltrexone depends on the flag for substance use disorder (SUD) and alcohol use disorder (AUD), so replicating that also requires replicating those flags.
+          <br><br>
+          <strong>CCW User Documentation </strong>
+          <a href="https://www2.ccwdata.org/web/guest/user-documentation"> These User Data Guides </a> from CCW describe how to work with Medicare claims data as well as some of the other data sets. This link also includes guides on the VRDC export review process.
 
+
+
+ </p>
         <h2 id="resdac_documents">Public RESDAC Documentation</h2>
-        <p>Insert text here.</p>
+        <p>RESDAC publishes other documentation that describes how to use TAF claims data on the VRDC, including information on how to link header and line files or link beneficiaries in across years.
+        <br><br>
+        <strong><a href="https://resdac.org/taf-data-quality-resources"> TAF Data Quality Resources</a> </strong>:
+        <ul>
+            <li>
+                <a href="https://www.medicaid.gov/dq-atlas/welcome"> <strong>DQ-Atlas</strong></a>: This website is run by the government to provide data about TAF data quality by state and year across many different variables in the data.</a>
+            </li>
+            <li>
+                <strong><a href="https://resdac.org/sites/datadocumentation.resdac.org/files/2022-04/TAF_TechGuide_DE_File.pdf"> Medicaid Demographic File</strong></a>: The Annual DE File includes demographic and eligibility data for all Medicaid and CHIP beneficiaries who were enrolled for at least one day during the calendar year.
+It provides monthly enrollment information, eligibility categories, and benefit package details.
+            </li>
+            <li>
+                <strong> <a href="https://resdac.org/sites/datadocumentation.resdac.org/files/2022-06/TAF-TechGuide-Claims-Files.pdf"> Claims Files</strong></a>: This documentation describes the inpatient, long-term care, pharmacy, and other medical services data. Each claim includes a header file, summarizing the entire claim, and line files detailing each service within the claim, which are linked for comprehensive analysis.
+            </li>
+            <li>
+                <strong><a href="https://resdac.org/sites/datadocumentation.resdac.org/files/2021-09/TAF_TechDoc_APL_File.pdf"> Annual Managed Care Plan Files</strong></a>: This documentation describes managed care entitys that are authorized to enroll Medicaid or CHIP beneficiaries. The variables include the plan’s business
+characteristics (such as profit status), its contract with the state (such as type of reimbursement
+arrangement and operating authority), and the location and type of beneficiaries the plan is allowed to
+enroll.
+            </li>
+            <li>
+                <strong><a href="https://resdac.org/sites/datadocumentation.resdac.org/files/2021-09/TAF_TechDoc_APR_File.pdf"> Annual Provider Files</strong></a>: The provider (APR) files capture information about all providers authorized by a state to
+render services to Medicaid and CHIP beneficiaries at any point in the calendar year, as well as various providers with pending or denied authorization.
+            </li>
+            <li>
+                <strong><a href="https://resdac.org/TAF-data-quality-resources/TAFTechDoc-IL"> Illinois Claims</a> </strong>: Illinois TAF data are based on a system of claims adjustments (instead of finalized claims) and so may require extra steps for researchers to analyze.
+            </li>
+
+        </ul>
+</p>
+
     </div>
 </div>
 
