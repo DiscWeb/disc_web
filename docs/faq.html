@@ -134,12 +134,20 @@
                  U.S. or U.S. territories, meet CCW security requirements (annual security training and HIPAA compliance), and comply with
                  CCW data output review process. </li>
             </ul>
-            <li><b>Are there any files missing on the VRDC?</b></li>
+            <li><b>Are there any states or years in the MAX data that do not have claims?</b></li>
+                <ul>
+                <li> Yes, for various reasons some states were unable to submit Medicaid data for 2009 to 2011 and so are not in the MAX files. Specifically, the following files:
+                  MAX2009.MAXDATA_ME_OT (<a href="https://www.macpac.gov/wp-content/uploads/2014/11/Effect-of-State-Medicaid-Payment-Policies-for-Medicare-Cost-Sharing-on-Access-to-Care-for-Dual-Eligibles.pdf">reference for Maine claims in 2009</a>),
+                  MAX2010.MAXDATA_KS_OT, MAX2010.MAXDATA_KS_RX, MAX2010.MAXDATA_ME_OT, MAX2010.MAXDATA_ME_RX (<a href="https://www.mathematica.org/-/media/publications/pdfs/health/maxchartbook_2010.pdf">reference for Maine and Kansas claims in 2010</a>),
+                   and MAX2011.MAXDATA_ID_OT (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9264472/">paper reference skipping Idaho in 2011</a>) are not available. Individuals from those states may or may not be missing from the eligibility, inpatient, and long term care files as well.
+                </li>
+              </ul>
+          <!--  <li><b>Are there any files missing on the VRDC?</b></li>
               <ul>
               <li> Yes, we noticed that in the MAX data there are specific state-year data files that do not exist from 2009 to 2011. Specifically, the following files:
                 MAX2009.MAXDATA_ME_OT, MAX2010.MAXDATA_KS_OT, MAX2010.MAXDATA_KS_RX, MAX2010.MAXDATA_ME_OT, MAX2010.MAXDATA_ME_RX, and MAX2011.MAXDATA_ID_OT are missing.
-  </li>
-              </ul>
+              </li>
+            </ul> -->
         </ul>
         </p>
 
@@ -149,9 +157,9 @@
             <li><b>Unable to insert into temporary index while processing summary functions</b></li>
             <ul>
             <li> This error appears in SAS EG when you perform an operation that requires too much memory.
-                 We encountered this error when we wanted to count the number of unique beneficiaries by 
+                 We encountered this error when we wanted to count the number of unique beneficiaries by
                  some groups (e.g., age, race, sex, state) in a big file (~500 million rows) using proc sql.
-                 As an alternative you can first use proc sort nodupkey on the unique identifier and group  
+                 As an alternative you can first use proc sort nodupkey on the unique identifier and group
                  variable and then proc freq on the group variable to obtain the count.
             </li>
                         </ul>
